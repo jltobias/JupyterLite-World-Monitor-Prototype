@@ -1,4 +1,4 @@
-# JupyterLite Open World Monitor Prototype
+# JupyterLite World Monitor Prototype
 
 A browser-only JupyterLite prototype for exploring World Monitor's public sandbox without embedding API credentials in GitHub Pages.
 
@@ -6,11 +6,11 @@ A browser-only JupyterLite prototype for exploring World Monitor's public sandbo
 
 These links point to the GitHub Pages deployment for this repository:
 
-- [00 - Start Here](https://jltobias.github.io/JupyterLite-Open-World-Monitor-Prototype/lab/index.html?path=00_Start_Here.ipynb)
-- [01 - Sandbox Catalog](https://jltobias.github.io/JupyterLite-Open-World-Monitor-Prototype/lab/index.html?path=01_Sandbox_Catalog.ipynb)
-- [02 - Cross-Domain Monitor](https://jltobias.github.io/JupyterLite-Open-World-Monitor-Prototype/lab/index.html?path=02_Cross_Domain_Monitor.ipynb)
+- [00 - Start Here](https://jltobias.github.io/JupyterLite-World-Monitor-Prototype/lab/index.html?path=00_Start_Here.ipynb)
+- [01 - Sandbox Catalog](https://jltobias.github.io/JupyterLite-World-Monitor-Prototype/lab/index.html?path=01_Sandbox_Catalog.ipynb)
+- [02 - Cross-Domain Monitor](https://jltobias.github.io/JupyterLite-World-Monitor-Prototype/lab/index.html?path=02_Cross_Domain_Monitor.ipynb)
 
-You can also [launch the JupyterLite lab](https://jltobias.github.io/JupyterLite-Open-World-Monitor-Prototype/lab/index.html) and choose a notebook from the file browser.
+You can also [launch the JupyterLite lab](https://jltobias.github.io/JupyterLite-World-Monitor-Prototype/lab/index.html) and choose a notebook from the file browser.
 
 > The GitHub Pages links become active after the JupyterLite changes are merged into `main` and the Pages deployment workflow completes successfully.
 
