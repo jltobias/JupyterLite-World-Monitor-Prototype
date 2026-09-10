@@ -4,21 +4,19 @@ A browser-only JupyterLite prototype that **displays World Monitor's supported l
 
 The full World Monitor `/dashboard` page cannot be framed by third-party sites. These notebooks therefore use World Monitor's official `/embed` surface. To honor this repository's no-ACLED requirement, the live embed requests only the **earthquakes** and **weather** layers.
 
-## Launch the notebooks
+## Live Links
 
-These links point to the GitHub Pages deployment for this repository:
+- [Launch 00 - Start Here + Live World Monitor](https://jltobias.github.io/JupyterLite-World-Monitor-Prototype/lab/index.html?path=00_Start_Here.ipynb)
+- [Launch 01 - Sandbox Catalog + Live World Monitor](https://jltobias.github.io/JupyterLite-World-Monitor-Prototype/lab/index.html?path=01_Sandbox_Catalog.ipynb)
+- [Launch 02 - Cross-Domain Monitor + Live World Monitor](https://jltobias.github.io/JupyterLite-World-Monitor-Prototype/lab/index.html?path=02_Cross_Domain_Monitor.ipynb)
+- [Launch JupyterLite Lab](https://jltobias.github.io/JupyterLite-World-Monitor-Prototype/lab/index.html)
+- [Open the live World Monitor embed directly](https://www.worldmonitor.app/embed?layers=earthquakes,weather&center=20,0&zoom=1&theme=dark&variant=full)
 
-- [00 - Start Here + Live World Monitor](https://jltobias.github.io/JupyterLite-World-Monitor-Prototype/lab/index.html?path=00_Start_Here.ipynb)
-- [01 - Sandbox Catalog + Live World Monitor](https://jltobias.github.io/JupyterLite-World-Monitor-Prototype/lab/index.html?path=01_Sandbox_Catalog.ipynb)
-- [02 - Cross-Domain Monitor + Live World Monitor](https://jltobias.github.io/JupyterLite-World-Monitor-Prototype/lab/index.html?path=02_Cross_Domain_Monitor.ipynb)
+> The GitHub Pages notebook links become active after the JupyterLite changes are merged into `main` and the Pages deployment workflow completes successfully.
 
-You can also [launch the JupyterLite lab](https://jltobias.github.io/JupyterLite-World-Monitor-Prototype/lab/index.html) and choose a notebook from the file browser.
+## What the notebooks display
 
-> The GitHub Pages links become active after the JupyterLite changes are merged into `main` and the Pages deployment workflow completes successfully.
-
-## Live embed
-
-The notebooks display:
+Each notebook includes this live World Monitor embed:
 
 `https://www.worldmonitor.app/embed?layers=earthquakes,weather&center=20,0&zoom=1&theme=dark&variant=full`
 
