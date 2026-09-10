@@ -1,1 +1,1 @@
-# JupyterLite-Open-World-Monitor-Prototype
+# JupyterLite-World-Monitor-Prototype
