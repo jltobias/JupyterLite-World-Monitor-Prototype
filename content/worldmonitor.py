@@ -9,6 +9,7 @@ import json
 from pyodide.http import open_url
 
 SANDBOX_INDEX = "https://www.worldmonitor.app/sandbox/index.json"
+EXCLUDED_OPERATION_IDS = {"ListAcledEvents"}
 
 
 def fetch_json(url):
@@ -18,12 +19,18 @@ def fetch_json(url):
 
 
 def sandbox_index():
-    """Return the public World Monitor sandbox operation catalog."""
-    return fetch_json(SANDBOX_INDEX)
+    """Return the public sandbox catalog with excluded operations removed."""
+    index = fetch_json(SANDBOX_INDEX)
+    index["operations"] = [
+        item
+        for item in index.get("operations", [])
+        if item.get("operationId") not in EXCLUDED_OPERATION_IDS
+    ]
+    return index
 
 
 def operations_by_id():
-    """Return sandbox operations keyed by operationId."""
+    """Return available sandbox operations keyed by operationId."""
     return {item["operationId"]: item for item in sandbox_index()["operations"]}
 
 
