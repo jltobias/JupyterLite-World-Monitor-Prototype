@@ -16,7 +16,7 @@ The full World Monitor `/dashboard` page cannot be framed by third-party sites. 
 
 ## What the notebooks display
 
-Each notebook includes this live World Monitor embed:
+Each notebook includes a code cell that renders this live World Monitor embed as notebook output. Run the first code cell in the notebook to display it:
 
 `https://www.worldmonitor.app/embed?layers=earthquakes,weather&center=20,0&zoom=1&theme=dark&variant=full`
 
