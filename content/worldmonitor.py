@@ -29,6 +29,20 @@ def display_dashboard(height=680):
     return display(HTML(html))
 
 
+def panel_dashboard(height=680):
+    """Return a Panel layout containing the supported World Monitor embed."""
+    import panel as pn
+
+    pn.extension()
+    height = max(320, min(int(height), 1200))
+    iframe = f'''<iframe src="{WORLD_MONITOR_EMBED_URL}" title="World Monitor live map" loading="eager" referrerpolicy="strict-origin-when-cross-origin" style="width:100%;height:{height}px;border:1px solid #444;border-radius:6px;display:block" allowfullscreen></iframe>'''
+    return pn.Column(
+        pn.pane.Markdown("## World Monitor live dashboard"),
+        pn.pane.HTML(iframe, height=height, sizing_mode="stretch_width"),
+        sizing_mode="stretch_width",
+    )
+
+
 def fetch_json(url):
     """Fetch JSON from a CORS-enabled HTTPS endpoint in JupyterLite/Pyodide."""
     with open_url(url) as response:

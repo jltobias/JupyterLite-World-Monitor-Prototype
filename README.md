@@ -20,6 +20,8 @@ Each notebook includes a code cell that renders this live World Monitor embed as
 
 `https://www.worldmonitor.app/embed?layers=earthquakes,weather&center=20,0&zoom=1&theme=dark&variant=full`
 
+The `02_Cross_Domain_Monitor.ipynb` notebook also demonstrates wrapping the same embed in a Panel layout. It installs Panel at runtime with `piplite`, which is appropriate for the browser-only JupyterLite environment.
+
 The embed is live World Monitor content. The accompanying API/sandbox cells are separate and use deterministic sample fixtures.
 
 ## Data-access model
