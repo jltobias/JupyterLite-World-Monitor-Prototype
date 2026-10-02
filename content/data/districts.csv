@@ -1,0 +1,10 @@
+district_id,district,population,longitude,latitude,flood_pct
+D01,Harbor,42000,34.7,-19.2,72
+D02,Estuary,78000,35.1,-19.2,85
+D03,Lagoon,31000,35.5,-19.2,55
+D04,Riverbend,65000,34.7,-18.8,42
+D05,Central,120000,35.1,-18.8,26
+D06,Palms,53000,35.5,-18.8,33
+D07,Highland,26000,34.7,-18.4,8
+D08,Orchard,48000,35.1,-18.4,12
+D09,Plateau,36000,35.5,-18.4,5

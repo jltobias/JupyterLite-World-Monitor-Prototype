@@ -1,0 +1,347 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "district_id": "D01",
+        "district": "Harbor",
+        "population": 42000,
+        "longitude": 34.7,
+        "latitude": -19.2,
+        "flood_pct": 72
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.5,
+              -19.4
+            ],
+            [
+              34.9,
+              -19.4
+            ],
+            [
+              34.9,
+              -19.0
+            ],
+            [
+              34.5,
+              -19.0
+            ],
+            [
+              34.5,
+              -19.4
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_id": "D02",
+        "district": "Estuary",
+        "population": 78000,
+        "longitude": 35.1,
+        "latitude": -19.2,
+        "flood_pct": 85
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.9,
+              -19.4
+            ],
+            [
+              35.3,
+              -19.4
+            ],
+            [
+              35.3,
+              -19.0
+            ],
+            [
+              34.9,
+              -19.0
+            ],
+            [
+              34.9,
+              -19.4
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_id": "D03",
+        "district": "Lagoon",
+        "population": 31000,
+        "longitude": 35.5,
+        "latitude": -19.2,
+        "flood_pct": 55
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.3,
+              -19.4
+            ],
+            [
+              35.699999999999996,
+              -19.4
+            ],
+            [
+              35.699999999999996,
+              -19.0
+            ],
+            [
+              35.3,
+              -19.0
+            ],
+            [
+              35.3,
+              -19.4
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_id": "D04",
+        "district": "Riverbend",
+        "population": 65000,
+        "longitude": 34.7,
+        "latitude": -18.8,
+        "flood_pct": 42
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.5,
+              -19.0
+            ],
+            [
+              34.9,
+              -19.0
+            ],
+            [
+              34.9,
+              -18.6
+            ],
+            [
+              34.5,
+              -18.6
+            ],
+            [
+              34.5,
+              -19.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_id": "D05",
+        "district": "Central",
+        "population": 120000,
+        "longitude": 35.1,
+        "latitude": -18.8,
+        "flood_pct": 26
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.9,
+              -19.0
+            ],
+            [
+              35.3,
+              -19.0
+            ],
+            [
+              35.3,
+              -18.6
+            ],
+            [
+              34.9,
+              -18.6
+            ],
+            [
+              34.9,
+              -19.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_id": "D06",
+        "district": "Palms",
+        "population": 53000,
+        "longitude": 35.5,
+        "latitude": -18.8,
+        "flood_pct": 33
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.3,
+              -19.0
+            ],
+            [
+              35.699999999999996,
+              -19.0
+            ],
+            [
+              35.699999999999996,
+              -18.6
+            ],
+            [
+              35.3,
+              -18.6
+            ],
+            [
+              35.3,
+              -19.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_id": "D07",
+        "district": "Highland",
+        "population": 26000,
+        "longitude": 34.7,
+        "latitude": -18.4,
+        "flood_pct": 8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.5,
+              -18.599999999999998
+            ],
+            [
+              34.9,
+              -18.599999999999998
+            ],
+            [
+              34.9,
+              -18.2
+            ],
+            [
+              34.5,
+              -18.2
+            ],
+            [
+              34.5,
+              -18.599999999999998
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_id": "D08",
+        "district": "Orchard",
+        "population": 48000,
+        "longitude": 35.1,
+        "latitude": -18.4,
+        "flood_pct": 12
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.9,
+              -18.599999999999998
+            ],
+            [
+              35.3,
+              -18.599999999999998
+            ],
+            [
+              35.3,
+              -18.2
+            ],
+            [
+              34.9,
+              -18.2
+            ],
+            [
+              34.9,
+              -18.599999999999998
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district_id": "D09",
+        "district": "Plateau",
+        "population": 36000,
+        "longitude": 35.5,
+        "latitude": -18.4,
+        "flood_pct": 5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.3,
+              -18.599999999999998
+            ],
+            [
+              35.699999999999996,
+              -18.599999999999998
+            ],
+            [
+              35.699999999999996,
+              -18.2
+            ],
+            [
+              35.3,
+              -18.2
+            ],
+            [
+              35.3,
+              -18.599999999999998
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

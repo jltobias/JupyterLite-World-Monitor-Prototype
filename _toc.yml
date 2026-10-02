@@ -1,0 +1,28 @@
+format: jb-book
+root: intro
+parts:
+  - caption: "Orient · observe · verify"
+    chapters:
+      - file: content/00_Start_Here
+      - file: content/01_Sandbox_Catalog
+      - file: content/02_Cross_Domain_Monitor
+  - caption: "Map · explore · explain"
+    chapters:
+      - file: content/03_2D_Maps
+      - file: content/04_3D_Globe
+      - file: content/05_Spatial_Epidemiology
+      - file: content/06_Data_Quality
+  - caption: "Plan · brief · share"
+    chapters:
+      - file: content/07_EOC_Planning
+      - file: content/08_Situation_Reports
+      - file: content/09_Live_Data
+      - file: content/10_Teaching_and_Sharing
+      - file: content/11_Capstone
+  - caption: "Field reference"
+    chapters:
+      - file: guide/instructor
+      - file: guide/deployment
+      - file: content/data/README
+      - file: guide/glossary
+      - file: guide/references

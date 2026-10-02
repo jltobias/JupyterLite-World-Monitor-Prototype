@@ -1,0 +1,10 @@
+facility_id,district_id,facility,longitude,latitude,beds,available_beds,functional,access_delay_hours
+F01,D01,Harbor training clinic,34.65,-19.15,20,2,1,8
+F02,D02,Estuary training clinic,35.05,-19.15,25,5,0,24
+F03,D03,Lagoon training clinic,35.449999999999996,-19.15,30,8,1,6
+F04,D04,Riverbend training clinic,34.65,-18.75,35,21,0,18
+F05,D05,Central training clinic,35.05,-18.75,40,24,1,2
+F06,D06,Palms training clinic,35.449999999999996,-18.75,45,27,1,4
+F07,D07,Highland training clinic,34.65,-18.349999999999998,50,30,1,1
+F08,D08,Orchard training clinic,35.05,-18.349999999999998,55,33,1,2
+F09,D09,Plateau training clinic,35.449999999999996,-18.349999999999998,60,36,1,1

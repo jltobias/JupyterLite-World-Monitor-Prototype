@@ -1,0 +1,7 @@
+{
+  "jupyter-config-data": {
+    "appName": "World Monitor Field Guide",
+    "appDescription": "Browser Python labs for situational awareness and global health",
+    "defaultKernelName": "python"
+  }
+}

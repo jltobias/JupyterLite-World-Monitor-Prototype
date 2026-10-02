@@ -1,0 +1,31 @@
+title: "World Monitor / JupyterLite Field Guide"
+author: "JupyterLite World Monitor Prototype contributors"
+copyright: "2026"
+logo: content/assets/mark.svg
+only_build_toc: true
+exclude_patterns: [".venv/**", "_build/**", "dist/**", "tests/**", "scripts/**", ".github/**", ".pytest_cache/**", "README.md"]
+execute:
+  execute_notebooks: force
+  timeout: 180
+  allow_errors: false
+  run_in_temp: false
+repository:
+  url: https://github.com/jltobias/JupyterLite-World-Monitor-Prototype
+  branch: main
+html:
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
+  home_page_in_navbar: true
+  extra_navbar: '<a href="https://jltobias.github.io/JupyterLite-World-Monitor-Prototype/lab/index.html?path=00_Start_Here.ipynb">Launch JupyterLite ↗</a>'
+  extra_footer: "Independent educational companion. Health examples are synthetic; no operational alerts."
+  baseurl: https://jltobias.github.io/JupyterLite-World-Monitor-Prototype/book/
+parse:
+  myst_enable_extensions: [colon_fence, deflist, dollarmath, html_image]
+sphinx:
+  extra_extensions: [sphinx_design]
+  config:
+    html_static_path: ["_static"]
+    html_css_files: ["fieldguide.css"]
+    nb_execution_show_tb: true
+    suppress_warnings: ["mystnb.unknown_mime_type"]

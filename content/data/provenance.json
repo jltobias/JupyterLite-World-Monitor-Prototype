@@ -1,0 +1,37 @@
+[
+  {
+    "path": "worldmonitor/GetCountryRisk.json",
+    "source": "https://www.worldmonitor.app/sandbox/get-country-risk.json",
+    "sha256": "198ff88e6fdbec31e4019c8d24dab3cf8eb36e92509f68068a6d3b6ccd6d14ca",
+    "kind": "upstream sandbox sample",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "path": "worldmonitor/ListMarketQuotes.json",
+    "source": "https://www.worldmonitor.app/sandbox/list-market-quotes.json",
+    "sha256": "bbfcf587f0b23ed4581e7e6b0abef1865ec6c860fbfb3ce72fb950c2daa07dbe",
+    "kind": "upstream sandbox sample",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "path": "worldmonitor/GetChokepointStatus.json",
+    "source": "https://www.worldmonitor.app/sandbox/get-chokepoint-status.json",
+    "sha256": "23857cbbb899e61c82a6e4dc4e082a946b2d0e1382cb4631c324ad0914d3dc9f",
+    "kind": "upstream sandbox sample",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "path": "worldmonitor/GetForecasts.json",
+    "source": "https://www.worldmonitor.app/sandbox/get-forecasts.json",
+    "sha256": "ec3121583a0d68688fd57d73a3c97fa2374d17ac6a2257403fc7637349b15bd8",
+    "kind": "upstream sandbox sample",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "path": "ne_110m_land.geojson",
+    "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_110m_land.geojson",
+    "sha256": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9",
+    "kind": "Natural Earth 1:110m land, public domain",
+    "retrieved": "2026-10-02"
+  }
+]

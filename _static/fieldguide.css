@@ -1,0 +1,12 @@
+:root { --pst-color-primary: #007f86; --pst-color-link: #006e78; }
+html[data-theme="dark"] { --pst-color-primary: #7ee0d1; --pst-color-link: #7ee0d1; }
+.bd-article-container { max-width: 1050px; }
+.bd-main .bd-content .bd-article-container { padding-top: 1.5rem; }
+h1 { letter-spacing: -.035em; line-height: 1.12; }
+.sd-card { border-radius: 14px; overflow: hidden; }
+.sd-card-img-top { height: 175px; object-fit: contain; background: white; }
+.sd-card-title { color: var(--pst-color-primary); }
+img { max-width: 100%; }
+iframe { max-width: 100%; }
+.cell_output { overflow-x: auto; }
+@media print { .bd-sidebar-primary,.bd-sidebar-secondary { display:none; } }

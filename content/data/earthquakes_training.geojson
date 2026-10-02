@@ -1,0 +1,153 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "title": "SYNTHETIC earthquake-format exercise",
+    "generated": 1764374400000
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "H01",
+      "properties": {
+        "place": "Pacific exercise",
+        "mag": 5.8,
+        "time": 1764288000000,
+        "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75,
+          -12,
+          10
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "H02",
+      "properties": {
+        "place": "Island exercise",
+        "mag": 4.9,
+        "time": 1764291600000,
+        "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140,
+          36,
+          15
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "H03",
+      "properties": {
+        "place": "Rift exercise",
+        "mag": 4.5,
+        "time": 1764295200000,
+        "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36,
+          -2,
+          20
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "H04",
+      "properties": {
+        "place": "Atlantic exercise",
+        "mag": 5.1,
+        "time": 1764298800000,
+        "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -28,
+          38,
+          25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "H05",
+      "properties": {
+        "place": "Coastal exercise",
+        "mag": 4.7,
+        "time": 1764302400000,
+        "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35,
+          -19,
+          30
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "H06",
+      "properties": {
+        "place": "Mountain exercise",
+        "mag": 5.6,
+        "time": 1764306000000,
+        "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86,
+          28,
+          35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "H07",
+      "properties": {
+        "place": "Northern exercise",
+        "mag": 4.6,
+        "time": 1764309600000,
+        "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -150,
+          62,
+          40
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "H08",
+      "properties": {
+        "place": "Southern exercise",
+        "mag": 5.3,
+        "time": 1764313200000,
+        "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172,
+          -42,
+          45
+        ]
+      }
+    }
+  ]
+}

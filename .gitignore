@@ -1,0 +1,10 @@
+.venv/
+_build/
+dist/
+.jupyter_cache/
+__pycache__/
+.ipynb_checkpoints/
+content/exports/
+*.pyc
+.pytest_cache/
+.jupyterlite.doit.db*
