@@ -1,5 +1,6 @@
 """Validate generated notebook/book entry points and packaged learning data."""
 from pathlib import Path
+from html.parser import HTMLParser
 import json
 import re
 import sys
@@ -8,6 +9,45 @@ from urllib.parse import unquote, urlparse
 ROOT=Path(__file__).resolve().parents[1]
 DIST=ROOT/"dist"
 errors=[]
+
+
+class LiteConfigParser(HTMLParser):
+    """Read the same ancestor configuration element that Lite requires."""
+    def __init__(self):
+        super().__init__()
+        self.in_config = False
+        self.found = False
+        self.parts = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "script" and dict(attrs).get("id") == "jupyter-config-data":
+            self.in_config = self.found = True
+
+    def handle_data(self, data):
+        if self.in_config:
+            self.parts.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "script":
+            self.in_config = False
+
+
+# A 200 response and a valid filename are insufficient: the root landing page
+# participates in every Lite application's configuration cascade.
+for name in ["index.html", "lab/index.html", "tree/index.html"]:
+    page = DIST/name
+    if not page.exists():
+        errors.append(f"Missing Lite configuration page: {name}")
+        continue
+    parser = LiteConfigParser()
+    parser.feed(page.read_text(encoding="utf-8"))
+    try:
+        config = json.loads("".join(parser.parts))
+        if not isinstance(config, dict):
+            raise ValueError("Configuration must be a JSON object")
+    except ValueError:
+        errors.append(f"Missing or invalid jupyter-config-data in {name}; Lite cannot start")
+
 for notebook in sorted((ROOT/"content").glob("*.ipynb")):
     for target in (DIST/"book/content"/(notebook.stem+".html"),DIST/"files"/notebook.name):
         if not target.exists(): errors.append(f"Missing published lab: {target}")

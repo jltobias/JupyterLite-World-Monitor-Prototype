@@ -36,8 +36,11 @@ for notebook in lite_content.glob("*.ipynb"):
 run("-c","from jupyterlite_core.app import main; main()","build","--contents",str(lite_content),"--output-dir",str(DIST))
 shutil.copytree(ROOT/"_build/html",DIST/"book",dirs_exist_ok=True)
 (DIST/".nojekyll").touch()
+# Lite fetches ancestor index.html files during startup. The Book redirect must
+# retain this JSON element, even though it does not launch Lite itself.
 (DIST/"index.html").write_text('''<!doctype html><html lang="en"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script id="jupyter-config-data" type="application/json" data-jupyter-lite-root=".">{}</script>
 <meta http-equiv="refresh" content="0; url=book/intro.html"><title>World Monitor Field Guide</title>
 <h1>World Monitor / JupyterLite Field Guide</h1><p><a href="book/intro.html">Read the Jupyter Book</a></p>
 <p><a href="lab/index.html?path=00_Start_Here.ipynb">Run the first JupyterLite lab</a></p></html>''',encoding="utf-8")

@@ -4,6 +4,8 @@
 
 JupyterLite stays at the Pages root so existing `/lab/index.html?path=...` URLs continue to work. Jupyter Book is added at `/book/intro.html`. The workflow creates a single Pages artifact containing both. The root redirects visitors to the Book; `/lab/` and `/tree/` remain direct entry points.
 
+The root landing page must retain its `jupyter-config-data` JSON script element. Lite reads that element from ancestor `index.html` files before loading the application bundle, even when the ancestor redirects visitors to the Book. The build checks this contract, and CI runs the shipped JavaScript configuration loader for workspace, notebook and tree links. Replacing the root with a plain redirect without the JSON element prevents Lite from launching.
+
 This repository uses **Jupyter Book 1.0.4.post1** and its Python/Sphinx toolchain. Jupyter Book 2 is a separate configuration system; upgrading requires an intentional migration from `_config.yml` and `_toc.yml`. See the [version-1 configuration reference](https://jupyter-book.readthedocs.io/v1/customize/config.html).
 
 ## Local commands
