@@ -1,0 +1,28 @@
+name: Check published notebook launch
+on:
+  push:
+    branches: [fix/notebook-launch]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated browser test tools
+        run: |
+          npm install --prefix _build/browser --no-audit --no-fund playwright@1.63.0
+          node _build/browser/node_modules/playwright/cli.js install --with-deps chromium
+      - name: Check the exact notebook links in Chromium
+        run: node scripts/check_browser_launch.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-launch-report
+          path: _build/browser-report/
+          retention-days: 7
